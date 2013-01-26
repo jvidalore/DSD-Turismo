@@ -33,7 +33,6 @@ private HotelService hotelService = null;
 		for (Hotel hotel : respuesta) {
 			System.out.println(hotel.getNombre());
 		}
-
 		
 		Assert.assertEquals(true,true);
     }
