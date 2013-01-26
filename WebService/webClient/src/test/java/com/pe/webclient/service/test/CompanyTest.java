@@ -30,6 +30,7 @@ private HotelService hotelService = null;
     {
 		
 		List<Hotel> respuesta = this.hotelService.ConsultarDisponibilidad(1);
+
 			
 		for (Hotel hotel : respuesta) {
 			System.out.println(hotel.getNombre());
