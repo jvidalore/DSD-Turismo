@@ -21,6 +21,7 @@ private HotelService hotelService = null;
 		ApplicationContext context = 
 				 new ClassPathXmlApplicationContext("/applicationContext.xml");
 		this.hotelService = (HotelService) context.getBean("hotelServiceClient");
+
 	}
 	
 	
