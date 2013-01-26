@@ -1,0 +1,178 @@
+.mensajeAlerta
+{
+    color: #111111;
+}
+
+.mensajeAlertaOverlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: Black;
+    display: none;
+}
+
+.mensajeAlertaModal
+{
+    background-color: #FFFFFF;
+    border: 10px solid #999;
+    height: 160px;
+    width: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -225px;
+    color: #111111;
+    padding: 0;
+    display: none;
+}
+
+.buttonPlanit
+{
+    color: #5A9BF8;
+    cursor: pointer;
+}
+
+.buttonPlanit:hover
+{
+    color: #4880D4;
+    font-weight: bold;
+}
+
+.mensajeValidacionSimple
+{
+    vertical-align: middle;
+    padding: 5px;
+    height: 20px;
+    border: 1px solid #F1D87C;
+    background-color: #F8EBB7;
+    width: 400px;
+    display: none;
+}
+
+.mensajeInformacion, .mensajeSuccess, .mensajeAlerta, .mensajeError, .mensajeConfirmacion
+{
+    font-family: Verdana, Arial, sans-serif, Helvetica;
+    border: 0 solid;
+    border-bottom: 0 groove;
+    border-right: 0 groove;
+    min-height: 30px;
+    position: absolute;
+    color: #111111;
+    display: none;
+    font-size: 14px;
+}
+
+.mensajeSuccess, .mensajeAlerta, .mensajeError, .mensajeConfirmacion
+{
+    width: 330px;
+}
+
+.mensajeInformacion
+{
+    border-color: #E9C122;
+    color: #90268E;
+    background: #F9EDBE;
+}
+
+.mensajeSuccess
+{
+    color: #4F8A10;
+    background: #DFF2BF;
+}
+
+.mensajeAlerta
+{
+    color: #9F6000; /*background-color: #FEEFB3;*/
+    background: #F1DA7E;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), 		to(#F1DA7E) );
+    background: -moz-linear-gradient(-90deg, #FFFFFF, #F1DA7E);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 		StartColorStr='#FFFFFF', EndColorStr='#F1DA7E' );
+}
+
+.mensajeError
+{
+    color: #990099;
+    background: #FF8484;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F0D0F0), 		to(#FF8484) );
+    background: -moz-linear-gradient(-90deg, #F0D0F0, #FF8484);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 		StartColorStr='#F0D0F0', EndColorStr='#FF8484' );
+}
+
+.mensajeConfirmacion
+{
+    color: #0066FF;
+    background: #8FB6E4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C5D9F1), 		to(#8FB6E4) );
+    background: -moz-linear-gradient(-90deg, #C5D9F1, #8FB6E4);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 		StartColorStr='#C5D9F1', EndColorStr='#8FB6E4' );
+}
+
+.mensajeInformacion .cabecera
+{
+    background-color: #FEEFB3;
+    display: none;
+}
+
+.mensajeAlerta .messageBoxCabecera
+{
+    background-color: #F1DA7E;
+    font-size: 16px;
+}
+
+.mensajeConfirmacion .messageBoxCabecera
+{
+    background-color: #8FB6E4;
+    color: #0066FF;
+    font-size: 16px;
+}
+
+.mensajeError .messageBoxCabecera
+{
+    background-color: #F58A8D;
+    color: #D8000C;
+    font-size: 16px;
+}
+/*FFF1CC */
+.messageBoxCabeceraCommon
+{
+    height: 30px;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+    font: 14px bold;
+    border-bottom: 0 solid;
+}
+
+.messageBoxCabeceraCommon span
+{
+    margin: 4px;
+    margin-top:6px;
+    font-size: 12px;
+    font-family: Verdana,  sans-serif, Arial,Helvetica;
+}
+
+.mensajeAlertaCabecera span
+{
+    padding: 5px;
+}
+
+.mensajeAlertaCabecera span:hover
+{
+    font-weight: bold;
+}
+
+.mensajeAlertaContenido
+{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+.mensajeAlertaText
+{
+    margin: 10px;
+}

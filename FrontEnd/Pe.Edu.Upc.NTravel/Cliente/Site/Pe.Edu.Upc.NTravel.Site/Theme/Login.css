@@ -1,0 +1,75 @@
+.loginContent
+{
+    width: 950px;
+    height: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -475px;
+    margin-top: 80px;
+}
+
+.resumen
+{
+    float: left;
+    width: 500px;
+    margin: 10px;
+}
+
+.icons
+{
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 60px;
+}
+
+.icons img
+{
+    float: left;
+    padding: 10px;
+}
+
+.loginForm
+{
+    float: right;
+    width: 400px;
+    border: solid 1px #d9dde8;
+    margin: 10px;
+}
+
+.loginForm input[type="text"], .loginForm input[type="password"]
+{
+    height: 30px;
+    width: 200px;
+    font: 12px;
+}
+
+.loginForm table
+{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.loginForm table td
+{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.loginForm h2
+{
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.loginForm .options
+{
+    text-align: center;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://service.company.pe.com/" name="HotelService" targetNamespace="http://service.company.pe.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.company.pe.com/" elementFormDefault="unqualified" targetNamespace="http://service.company.pe.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="ConsultarDisponibilidad" type="tns:ConsultarDisponibilidad" />
+      <xs:element name="ConsultarDisponibilidadResponse" type="tns:ConsultarDisponibilidadResponse" />
+      <xs:complexType name="ConsultarDisponibilidad">
+        <xs:sequence>
+          <xs:element name="cantidadPersona" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ConsultarDisponibilidadResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:hotel" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="hotel">
+        <xs:sequence>
+          <xs:element name="camas" type="xs:int" />
+          <xs:element name="categoria" type="xs:int" />
+          <xs:element name="codigo" type="xs:int" />
+          <xs:element name="costo" type="xs:double" />
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+          <xs:element minOccurs="0" name="logo" type="xs:string" />
+          <xs:element minOccurs="0" name="nombre" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarDisponibilidadResponse">
+    <wsdl:part name="parameters" element="ns1:ConsultarDisponibilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarDisponibilidad">
+    <wsdl:part name="parameters" element="ns1:ConsultarDisponibilidad" />
+  </wsdl:message>
+  <wsdl:portType name="HotelService">
+    <wsdl:operation name="ConsultarDisponibilidad">
+      <wsdl:input name="ConsultarDisponibilidad" message="ns1:ConsultarDisponibilidad" />
+      <wsdl:output name="ConsultarDisponibilidadResponse" message="ns1:ConsultarDisponibilidadResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

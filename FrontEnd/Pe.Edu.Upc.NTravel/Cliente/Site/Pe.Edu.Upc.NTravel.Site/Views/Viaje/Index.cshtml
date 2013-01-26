@@ -1,0 +1,88 @@
+﻿@using Pe.Edu.Upc.NTravel.Site.Src.ViewModel
+@model ViajeViewModel
+@section Head{
+    <link href="@Url.Content("~/Theme/Viaje.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Components/NTravel/Viaje/Viaje.js")" type="text/javascript"></script>
+}
+<div class="tableDiv centerContent">
+    <div class="tableDivHeader">
+        Planifique Su Viaje
+    </div>
+    <div class="tableDivBody">
+        <form id="frmViaje" action="@Url.Content("~/")Viaje/Buscar">
+        <table class="margin20 centerContent" width="90%">
+            <tr>
+                <td>
+                    Origen
+                </td>
+                <td>
+                    @Html.DropDownList("IdLugarOrigen", Model.Lugares, "Seleccione", new { id = "ddlLugarOrigen", @class = "validable", validation = "required true", errormessage = "Seleccione su lugar de origen" })
+                </td>
+                <td>
+                    Destino
+                </td>
+                <td>
+                    <select id="ddlLugarDestino" name="IdLugarDestino" class="validable" validation="required true"
+                        errormessage="Selecione su destino">
+                        <option>Seleccione</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Partida
+                </td>
+                <td>
+                    <input id="txtPartida" name="Partida" class="widthShort validable" readonly="readonly"
+                        validation="required true" errormessage="Ingrese su fecha de partida" />
+                </td>
+                <td>
+                    Regreso
+                </td>
+                <td>
+                    <input id="txtRegreso" name="Regreso" class="widthShort validable" readonly="readonly"
+                        validation="required true" errormessage="Ingrese su fecha de retorno" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Adultos
+                </td>
+                <td>
+                    <input name="Adultos" class="widthShort validable" validation="required true" errormessage="Ingrese el número de adultos" />
+                </td>
+                <td>
+                    Niños
+                </td>
+                <td>
+                    <input name="Ninios" class="widthShort validable" validation="required true" errormessage="Ingrese el número de niños" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Habitaciones
+                </td>
+                <td colspan="3">
+                    <select name="Habitaciones" class="validable" validation="required true" errormessage="Seleccione la cantidad de habitaciones">
+                        <option value="1">1 Habitación</option>
+                        <option value="2">2 Habitación</option>
+                        <option value="3">3 Habitación</option>
+                        <option value="4">4 Habitación</option>
+                        <option value="5">5 Habitación</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        </form>
+        <div class="centerText">
+            <button id="btnBuscar" class="flotarDerecha margin10">
+                Buscar</button>
+        </div>
+    </div>
+</div>
+<div id="divResultado" class="centerContent" >
+</div>
+<script type="text/javascript">
+    var viaje = new Pe.Edu.Upc.NTravel.Site.Viaje();
+    viaje.inicializar();
+</script>

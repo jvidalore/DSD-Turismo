@@ -1,0 +1,14 @@
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\bin\Debug\Pe.Edu.Upc.NTravel.Domain.dll
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\bin\Debug\Pe.Edu.Upc.NTravel.Domain.pdb
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\bin\Debug\Pe.Edu.Upc.NTravel.Data.Model.dll
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\bin\Debug\Pe.Edu.Upc.NTravel.Data.Model.pdb
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\obj\Debug\ResolveAssemblyReference.cache
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\obj\Debug\Pe.Edu.Upc.NTravel.Domain.dll
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\obj\Debug\Pe.Edu.Upc.NTravel.Domain.pdb
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\bin\Debug\Pe.Edu.Upc.NTravel.Domain.dll
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\bin\Debug\Pe.Edu.Upc.NTravel.Domain.pdb
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\bin\Debug\Pe.Edu.Upc.NTravel.Data.Model.dll
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\bin\Debug\Pe.Edu.Upc.NTravel.Data.Model.pdb
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\obj\Debug\ResolveAssemblyReference.cache
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\obj\Debug\Pe.Edu.Upc.NTravel.Domain.dll
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Domain\Pe.Edu.Upc.NTravel.Domain\obj\Debug\Pe.Edu.Upc.NTravel.Domain.pdb

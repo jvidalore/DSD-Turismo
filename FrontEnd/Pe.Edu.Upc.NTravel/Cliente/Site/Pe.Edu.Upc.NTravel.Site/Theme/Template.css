@@ -1,0 +1,102 @@
+﻿html
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Arial, sans-serif, Helvetica;
+    font-size: 11px;
+    color: #44464a;
+}
+
+input[type="submit"], input[type="button"], button
+{
+    width: 80px;
+    height: 25px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #9c9c9c; /* Fallback style */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 .05em rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 .05em rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 .05em rgba(0, 0, 0, 0.4);
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    font-weight: bold; /*COLOR DEL BOTON*/
+    background: #F09C15;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8C939), 		to(#F09C15) );
+    background: -moz-linear-gradient(-90deg, #F8C939, #F09C15);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 		StartColorStr='#f8c939', EndColorStr='#f09c15' );
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, button:hover
+{
+    box-shadow: 0 0 .1em rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 .1em rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 .1em rgba(0, 0, 0, 0.4); /*COLOR DEL BOTON*/
+    background: #f8c939;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f09c15), 		to(#f8c939) );
+    background: -moz-linear-gradient(-90deg, #f09c15, #f8c939);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 		StartColorStr='#f09c15', EndColorStr='#f8c939' );
+}
+
+input[type="submit"]:active, input[type="button"]:active, button:active
+{
+    /* When pressed, move it down 1px */
+    position: relative;
+    top: 1px;
+    background: #f09c15;
+}
+
+.header
+{
+    width: 100%;
+    background-color: #f9f9f9;
+    height: 100px;
+    border-bottom: solid 1px #f2f1f1;
+}
+
+.header span
+{
+    font-weight: bold;
+    color: #24B0E8;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+    margin: 20px;
+    font-family: Verdana, sans-serif, Helvetica, Arial;
+}
+
+.main
+{
+    width: 100%;
+    min-height: 500px;
+    border-top: solid 1px #898989;
+    margin-bottom: 10px;
+}
+
+.footer
+{
+    border-top: solid 1px #f2f1f1;
+    border-top: solid 1px #898989;
+    height: 58px;
+    width: 100%;
+}
+
+.footer span
+{
+    position: relative;
+    top: 10px;
+    left: 50%;
+    margin-left: -140px;
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>N.TRaveL</title>
+    <link href="@Url.Content("~/Theme/Template.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Theme/Common.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Components/JQuery/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Components/JQueryCustom/jquery-ui-1.10.0.custom.min.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Components/JQueryCustom/jquery-ui-1.10.0.custom.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Components/Codemaleon/ns.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Components/MessageBox/MessageBox.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Components/MessageBox/MessageBox.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Components/Validator/Validator.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Components/Validator/jquery.validate.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Components/Validator/jquery.validate.unobtrusive.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Components/HisAjaxFramework/AjaxUtil.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Components/MessageLoading/MessageLoading.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Components/MessageLoading/MessageLoading.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        var AppPath = '@Url.Content("~/")';
+    </script>
+    @RenderSection("Head", false)
+</head>
+<body>
+    <div class="header">
+        <span>N.Travel</span>
+    </div>
+    <table border="0" class="widthFull" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <div class="main">
+                    @RenderBody()
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="vAlingBottom">
+                <div class="footer">
+                    <span>NTravel.Com ® 2013 - © Todos los derechos reservados </span>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

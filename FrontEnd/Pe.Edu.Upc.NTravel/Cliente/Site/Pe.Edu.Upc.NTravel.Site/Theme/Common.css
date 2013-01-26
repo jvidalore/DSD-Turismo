@@ -1,0 +1,100 @@
+﻿.floatLeft
+{
+    float: left;
+}
+
+.floatRight
+{
+    float: right;
+}
+
+.hide
+{
+    display: none;
+}
+
+.margin20
+{
+    margin: 20px;
+}
+
+.margin10
+{
+    margin: 10px;
+}
+
+.centerText
+{
+    text-align: center;
+}
+
+.centerContent
+{
+    margin: 0px auto;
+}
+
+.widthFull
+{
+    width: 100%;
+}
+
+.widthShort
+{
+    width: 70px;
+}
+
+.resaltado
+{
+    font-weight: bold;
+    height: 20px;
+    background-color: #8da4b4;
+}
+
+.vAlingTop
+{
+    vertical-align: top;
+}
+
+.vAlingBottom
+{
+    vertical-align: bottom;
+}
+
+.scrollY
+{
+    overflow-y: scroll;
+}
+.tableDiv
+{
+    width: 950px;
+    min-height: 280px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #898989;
+}
+
+.tableDivHeader
+{
+    height: 25px;
+    border-bottom: 1px solid #898989;
+    font-weight: bold;
+    vertical-align: middle;
+    background-color: #1969CE; /*247BE8;*/
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.tableDivBody table
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tableDivBody table td
+{
+    width: 25%;
+    padding: 10px;
+    text-align: left;
+}

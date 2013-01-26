@@ -1,0 +1,10 @@
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\bin\Debug\Pe.Edu.Upc.NTravel.Data.Model.dll
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\bin\Debug\Pe.Edu.Upc.NTravel.Data.Model.pdb
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\obj\Debug\Pe.Edu.Upc.NTravel.Data.Model.dll
+D:\EPE\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\obj\Debug\Pe.Edu.Upc.NTravel.Data.Model.pdb
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\bin\Debug\Pe.Edu.Upc.NTravel.Data.Model.dll
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\bin\Debug\Pe.Edu.Upc.NTravel.Data.Model.pdb
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\obj\Debug\Pe.Edu.Upc.NTravel.Data.Model.dll
+D:\Personal\Distribuidos\Proyecto\Pe.Edu.Upc.NTravel\Data\Pe.Edu.Upc.NTravel.Data.Model\obj\Debug\Pe.Edu.Upc.NTravel.Data.Model.pdb

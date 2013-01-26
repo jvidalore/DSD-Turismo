@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://impl.service.company.pe.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.company.pe.com/" name="HotelServiceImplService" targetNamespace="http://impl.service.company.pe.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.company.pe.com/" location="http://localhost:8080/wsCompany/HotelService?wsdl=HotelService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="HotelServiceImplServiceSoapBinding" type="ns1:HotelService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarDisponibilidad">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="ConsultarDisponibilidad">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ConsultarDisponibilidadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HotelServiceImplService">
+    <wsdl:port name="HotelServiceImplPort" binding="tns:HotelServiceImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/wsCompany/HotelService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

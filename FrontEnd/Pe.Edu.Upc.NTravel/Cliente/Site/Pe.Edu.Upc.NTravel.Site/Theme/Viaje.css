@@ -1,0 +1,65 @@
+.viajeContent
+{
+    width: 906px;
+}
+
+.viajeContentResultado
+{
+    width: 300px;
+}
+
+.viajeContentResultado .titutlo
+{
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #1954B3;
+    color: #ffffff;
+    height: 30px;
+    vertical-align: middle;
+    padding-top: 8px;
+}
+
+
+
+.viajeContentResultado .item
+{
+    min-height: 50px;
+    font-size: 11px;
+    cursor: pointer;
+    background-color: #E1F2F9;
+}
+
+.viajeContentResultado .item span
+{
+    font-size: 11px;
+}
+.viajeContentResultado .item:hover
+{
+    opacity: 0.5;
+    background-color: #B4E5F9;
+    filter: alpha(opacity=90); /*border: solid 1px #d9dde8;*/
+}
+
+
+.colorAmarillo
+{
+    border: 1px solid #B39300; /*#DED11D;*/
+    background-color: #F7CD11; /*#F5E401;*/
+}
+
+.colorAmarillo .item
+{
+    border-top: 1px solid #B39300; /*#DED11D;*/
+}
+
+.colorVerde
+{
+    border: 1px solid #76A406;
+    background-color: #95CD0E;
+}
+
+.colorRojo
+{
+    border: 1px solid #A40606;
+    background-color: #DE3434;
+}

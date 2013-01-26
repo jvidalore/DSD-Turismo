@@ -1,0 +1,137 @@
+﻿@model Pe.Edu.Upc.NTravel.Domain.DTO.Paquete
+<div class="viajeContent centerContent">
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="vAlingTop">
+                <div class="viajeContentResultado">
+                    <div class="centerText titutlo">
+                        <span>Vuelos</span></div>
+                    @foreach (var vuelo in Model.Vuelos)
+                    {
+                        <div class="item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="vuelos" />
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <span>@vuelo.Aerolinea</span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@vuelo.Clase</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@vuelo.Asientos</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@vuelo.Costo</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </td>
+            <td class="vAlingTop">
+                <div class="viajeContentResultado">
+                    <div class="centerText titutlo">
+                        <span>Hoteles</span></div>
+                    @foreach (var hotel in Model.Hoteles)
+                    {
+                        <div class="item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="hoteles" />
+                                    </td>
+                                    <td>
+                                        <img src="@hotel.Logo"  alt="H" height="100" width="120"/>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <span>@hotel.Nombre</span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@hotel.Camas</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@hotel.Categoria</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@hotel.Descripcion</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@hotel.Costo</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </td>
+            <td class="vAlingTop">
+                <div class="viajeContentResultado">
+                    <div class="centerText titutlo">
+                        <span>Tours</span>
+                    </div>
+                    @foreach (var tours in Model.Tours)
+                    {
+                        <div class="item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="Tours" />
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <span>@tours.Descripción</span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@tours.Duracion</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>@tours.Costo</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
