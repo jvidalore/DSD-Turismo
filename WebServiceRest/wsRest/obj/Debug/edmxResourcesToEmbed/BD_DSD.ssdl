@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_DSDModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BD_DSDModelStoreContainer">
+    <EntitySet Name="Aerolinea" EntityType="BD_DSDModel.Store.Aerolinea" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ciudad" EntityType="BD_DSDModel.Store.Ciudad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vuelo" EntityType="BD_DSDModel.Store.Vuelo" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Vuelo_Aerolinea" Association="BD_DSDModel.Store.FK_Vuelo_Aerolinea">
+      <End Role="Aerolinea" EntitySet="Aerolinea" />
+      <End Role="Vuelo" EntitySet="Vuelo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vuelo_Ciudad" Association="BD_DSDModel.Store.FK_Vuelo_Ciudad">
+      <End Role="Ciudad" EntitySet="Ciudad" />
+      <End Role="Vuelo" EntitySet="Vuelo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vuelo_Ciudad2" Association="BD_DSDModel.Store.FK_Vuelo_Ciudad2">
+      <End Role="Ciudad" EntitySet="Ciudad" />
+      <End Role="Vuelo" EntitySet="Vuelo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Aerolinea">
+    <Key>
+      <PropertyRef Name="CoAerolinea" />
+    </Key>
+    <Property Name="CoAerolinea" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="NoRazonSocial" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Ciudad">
+    <Key>
+      <PropertyRef Name="CoCiudad" />
+    </Key>
+    <Property Name="CoCiudad" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="NoDescripcion" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CoTipoUbig" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CoPais" Type="char" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="Vuelo">
+    <Key>
+      <PropertyRef Name="NuVuelo" />
+    </Key>
+    <Property Name="NuVuelo" Type="int" Nullable="false" />
+    <Property Name="CoAerolinea" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="CoCiudadOri" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="CoCiudadDes" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="SsCosto" Type="numeric" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="FeSalida" Type="smalldatetime" />
+    <Property Name="FeRetorno" Type="smalldatetime" />
+    <Property Name="HrSalida" Type="smalldatetime" />
+    <Property Name="HrRetorno" Type="smalldatetime" />
+    <Property Name="QtDisponible" Type="smallint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Vuelo_Aerolinea">
+    <End Role="Aerolinea" Type="BD_DSDModel.Store.Aerolinea" Multiplicity="1" />
+    <End Role="Vuelo" Type="BD_DSDModel.Store.Vuelo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aerolinea">
+        <PropertyRef Name="CoAerolinea" />
+      </Principal>
+      <Dependent Role="Vuelo">
+        <PropertyRef Name="CoAerolinea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vuelo_Ciudad">
+    <End Role="Ciudad" Type="BD_DSDModel.Store.Ciudad" Multiplicity="1" />
+    <End Role="Vuelo" Type="BD_DSDModel.Store.Vuelo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudad">
+        <PropertyRef Name="CoCiudad" />
+      </Principal>
+      <Dependent Role="Vuelo">
+        <PropertyRef Name="CoCiudadOri" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vuelo_Ciudad2">
+    <End Role="Ciudad" Type="BD_DSDModel.Store.Ciudad" Multiplicity="1" />
+    <End Role="Vuelo" Type="BD_DSDModel.Store.Vuelo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudad">
+        <PropertyRef Name="CoCiudad" />
+      </Principal>
+      <Dependent Role="Vuelo">
+        <PropertyRef Name="CoCiudadDes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

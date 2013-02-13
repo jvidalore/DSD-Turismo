@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BD_DSDModelStoreContainer" CdmEntityContainer="BD_DSDEntities">
+    <EntitySetMapping Name="Aerolineas">
+      <EntityTypeMapping TypeName="BD_DSDModel.Aerolinea">
+        <MappingFragment StoreEntitySet="Aerolinea">
+          <ScalarProperty Name="CoAerolinea" ColumnName="CoAerolinea" />
+          <ScalarProperty Name="NoRazonSocial" ColumnName="NoRazonSocial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ciudads">
+      <EntityTypeMapping TypeName="BD_DSDModel.Ciudad">
+        <MappingFragment StoreEntitySet="Ciudad">
+          <ScalarProperty Name="CoCiudad" ColumnName="CoCiudad" />
+          <ScalarProperty Name="NoDescripcion" ColumnName="NoDescripcion" />
+          <ScalarProperty Name="CoTipoUbig" ColumnName="CoTipoUbig" />
+          <ScalarProperty Name="CoPais" ColumnName="CoPais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vueloes">
+      <EntityTypeMapping TypeName="BD_DSDModel.Vuelo">
+        <MappingFragment StoreEntitySet="Vuelo">
+          <ScalarProperty Name="NuVuelo" ColumnName="NuVuelo" />
+          <ScalarProperty Name="CoAerolinea" ColumnName="CoAerolinea" />
+          <ScalarProperty Name="CoCiudadOri" ColumnName="CoCiudadOri" />
+          <ScalarProperty Name="CoCiudadDes" ColumnName="CoCiudadDes" />
+          <ScalarProperty Name="SsCosto" ColumnName="SsCosto" />
+          <ScalarProperty Name="FeSalida" ColumnName="FeSalida" />
+          <ScalarProperty Name="FeRetorno" ColumnName="FeRetorno" />
+          <ScalarProperty Name="HrSalida" ColumnName="HrSalida" />
+          <ScalarProperty Name="HrRetorno" ColumnName="HrRetorno" />
+          <ScalarProperty Name="QtDisponible" ColumnName="QtDisponible" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
