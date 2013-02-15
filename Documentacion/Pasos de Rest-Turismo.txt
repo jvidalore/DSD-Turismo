@@ -1,0 +1,8 @@
+Lista de Vuelos con los siguientes parametros FechaPartida/ FechaRetorno/CiudadOrigen/CiudadDestino
+http://localhost:62284/api/vuelo/0/20130104/20130104/000070/000070
+
+Lista de Vuelos
+http://localhost:62284/api/vuelo/
+
+Lista de Vuelos con el siguiente parametro id 
+http://localhost:62284/api/vuelo/92
