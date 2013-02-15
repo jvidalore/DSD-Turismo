@@ -1,109 +1,52 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Web;
 using System.Web.Http;
-
+using Domain.DTO;
+using BusinessLogic;
 namespace wsRest.Controllers
 {
     public class VueloController : ApiController
     {
-        private BD_DSDEntities db = new BD_DSDEntities();
-
-        // GET api/Vuelo
-        public IEnumerable<Vuelo> GetVueloes()
+        // private readonly Vuelo repositorio = new Vuelo();
+        List<Domain.DTO.Vuelo> oVuelo = null;
+        
+        // GET api/vuelo
+        public IEnumerable<Domain.DTO.Vuelo> GetVuelos()
         {
-            var vueloes = db.Vueloes.Include("Aerolinea").Include("Ciudad").Include("Ciudad1");
-            return vueloes.AsEnumerable();
+            oVuelo = BLVuelo.CargarVueloAll();
+            return oVuelo;
         }
 
-        // GET api/Vuelo/5
-        public Vuelo GetVuelo(int id)
+        // GET api/vuelo/0/20130104/20130104/000070/000070
+        public IEnumerable<Domain.DTO.Vuelo> GetVuelos(string FechaPartida, string FechaRegreso, string LugarOrigen, string LugarDestino)
         {
-            Vuelo vuelo = db.Vueloes.Single(v => v.NuVuelo == id);
-            if (vuelo == null)
-            {
-                throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotFound));
-            }
-
-            return vuelo;
+            oVuelo = BLVuelo.CargarVueloFind(FechaPartida,FechaRegreso,LugarOrigen,LugarDestino);
+            return oVuelo;
         }
 
-        // PUT api/Vuelo/5
-        public HttpResponseMessage PutVuelo(int id, Vuelo vuelo)
+        // GET api/vuelo/94
+        public IEnumerable<Domain.DTO.Vuelo> GetVuelos(int id)
         {
-            if (ModelState.IsValid && id == vuelo.NuVuelo)
-            {
-                db.Vueloes.Attach(vuelo);
-                db.ObjectStateManager.ChangeObjectState(vuelo, EntityState.Modified);
-
-                try
-                {
-                    db.SaveChanges();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    return Request.CreateResponse(HttpStatusCode.NotFound);
-                }
-
-                return Request.CreateResponse(HttpStatusCode.OK);
-            }
-            else
-            {
-                return Request.CreateResponse(HttpStatusCode.BadRequest);
-            }
+            oVuelo = BLVuelo.CargarVueloOne(id);
+            return oVuelo;
         }
 
-        // POST api/Vuelo
-        public HttpResponseMessage PostVuelo(Vuelo vuelo)
+        // POST api/vuelo
+        public void Post([FromBody]string value)
         {
-            if (ModelState.IsValid)
-            {
-                db.Vueloes.AddObject(vuelo);
-                db.SaveChanges();
-
-                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, vuelo);
-                response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = vuelo.NuVuelo }));
-                return response;
-            }
-            else
-            {
-                return Request.CreateResponse(HttpStatusCode.BadRequest);
-            }
         }
 
-        // DELETE api/Vuelo/5
-        public HttpResponseMessage DeleteVuelo(int id)
+        // PUT api/vuelo/5
+        public void Put(int id, [FromBody]string value)
         {
-            Vuelo vuelo = db.Vueloes.Single(v => v.NuVuelo == id);
-            if (vuelo == null)
-            {
-                return Request.CreateResponse(HttpStatusCode.NotFound);
-            }
-
-            db.Vueloes.DeleteObject(vuelo);
-
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                return Request.CreateResponse(HttpStatusCode.NotFound);
-            }
-
-            return Request.CreateResponse(HttpStatusCode.OK, vuelo);
         }
 
-        protected override void Dispose(bool disposing)
+        // DELETE api/vuelo/5
+        public void Delete(int id)
         {
-            db.Dispose();
-            base.Dispose(disposing);
         }
     }
 }

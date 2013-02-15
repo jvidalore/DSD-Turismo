@@ -3,6 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wsRest", "wsRest\wsRest.csproj", "{4570D77A-5217-4ED6-AFAC-F17C0B0B8335}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{24F4D62A-B590-42DB-BDDF-B16BDD5CD4CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{71BA5F43-4003-4809-972C-A636A951EDED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{362380AC-D572-4F11-8AAA-77DDFA3DEBDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0A175393-2D00-4FA1-8A08-E5351E2D93B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{08F65468-C991-4630-9B15-2E674CD90061}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{29435A3B-E0BE-4830-BF04-0D6AD90BC723}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +25,25 @@ Global
 		{4570D77A-5217-4ED6-AFAC-F17C0B0B8335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4570D77A-5217-4ED6-AFAC-F17C0B0B8335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4570D77A-5217-4ED6-AFAC-F17C0B0B8335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71BA5F43-4003-4809-972C-A636A951EDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71BA5F43-4003-4809-972C-A636A951EDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71BA5F43-4003-4809-972C-A636A951EDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71BA5F43-4003-4809-972C-A636A951EDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A175393-2D00-4FA1-8A08-E5351E2D93B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A175393-2D00-4FA1-8A08-E5351E2D93B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A175393-2D00-4FA1-8A08-E5351E2D93B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A175393-2D00-4FA1-8A08-E5351E2D93B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29435A3B-E0BE-4830-BF04-0D6AD90BC723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29435A3B-E0BE-4830-BF04-0D6AD90BC723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29435A3B-E0BE-4830-BF04-0D6AD90BC723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29435A3B-E0BE-4830-BF04-0D6AD90BC723}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71BA5F43-4003-4809-972C-A636A951EDED} = {24F4D62A-B590-42DB-BDDF-B16BDD5CD4CD}
+		{0A175393-2D00-4FA1-8A08-E5351E2D93B9} = {362380AC-D572-4F11-8AAA-77DDFA3DEBDF}
+		{29435A3B-E0BE-4830-BF04-0D6AD90BC723} = {08F65468-C991-4630-9B15-2E674CD90061}
 	EndGlobalSection
 EndGlobal

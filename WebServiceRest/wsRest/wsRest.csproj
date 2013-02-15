@@ -131,6 +131,7 @@
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\Vuelo2Controller.cs" />
     <Compile Include="Controllers\VueloController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -249,6 +250,16 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BD_DSD.Designer.cs</LastGenOutput>
     </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{29435A3B-E0BE-4830-BF04-0D6AD90BC723}</Project>
+      <Name>BusinessLogic %28BusinessLogic\BusinessLogic%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{71BA5F43-4003-4809-972C-A636A951EDED}</Project>
+      <Name>Domain %28Domain\Domain%29</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

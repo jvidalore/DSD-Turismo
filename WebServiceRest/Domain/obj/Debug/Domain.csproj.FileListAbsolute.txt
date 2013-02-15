@@ -1,0 +1,5 @@
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\Domain\bin\Debug\Domain.dll
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\Domain\bin\Debug\Domain.pdb
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\Domain\obj\Debug\ResolveAssemblyReference.cache
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\Domain\obj\Debug\Domain.dll
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\Domain\obj\Debug\Domain.pdb

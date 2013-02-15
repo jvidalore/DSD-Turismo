@@ -1,0 +1,9 @@
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\bin\Debug\DataAccess.dll
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\bin\Debug\Domain.dll
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\bin\Debug\DataAccess.pdb
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\bin\Debug\Domain.pdb
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\obj\Debug\BusinessLogic.pdb
