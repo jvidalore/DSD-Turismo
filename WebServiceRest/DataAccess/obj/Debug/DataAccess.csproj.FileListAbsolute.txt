@@ -5,3 +5,10 @@ D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\DataAccess\bin\Debug\Domain.dll
 D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\DataAccess\bin\Debug\Domain.pdb
 D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\DataAccess\obj\Debug\DataAccess.dll
 D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\DataAccess\obj\Debug\DataAccess.pdb
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\DataAccess\bin\Debug\DataAccess.dll
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\DataAccess\bin\Debug\DataAccess.pdb
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\DataAccess\bin\Debug\Domain.dll
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\DataAccess\bin\Debug\Domain.pdb
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\DataAccess\obj\Debug\DataAccess.dll
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\DataAccess\obj\Debug\DataAccess.pdb

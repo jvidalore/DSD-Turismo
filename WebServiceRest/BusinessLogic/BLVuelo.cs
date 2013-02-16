@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DataAccess.NoTransactional;
+using DataAccess.Transactional;
 using Domain.DTO;
 namespace BusinessLogic
 {
@@ -24,7 +25,10 @@ namespace BusinessLogic
         #endregion
 
         #region "Transactional"
-
+        public static bool ActualizarVuelo(int iNuVuelo, int iQtSeleccionada)
+        {
+            return new DATVuelo().ActualizarVuelo(iNuVuelo, iQtSeleccionada);
+        }
         #endregion
     }
 }

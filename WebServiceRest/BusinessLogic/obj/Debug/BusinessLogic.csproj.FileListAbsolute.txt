@@ -7,3 +7,12 @@ D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\bin\Debug\DataAcc
 D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\bin\Debug\Domain.pdb
 D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\obj\Debug\BusinessLogic.dll
 D:\Personal\jvidalore\DSD-Turismo\WebServiceRest\BusinessLogic\obj\Debug\BusinessLogic.pdb
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\bin\Debug\BusinessLogic.dll
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\bin\Debug\BusinessLogic.pdb
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\bin\Debug\DataAccess.dll
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\bin\Debug\Domain.dll
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\bin\Debug\DataAccess.pdb
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\bin\Debug\Domain.pdb
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\obj\Debug\BusinessLogic.dll
+E:\Jonathan\DSD-Turismo-master\WebServiceRest\BusinessLogic\obj\Debug\BusinessLogic.pdb

@@ -11,8 +11,9 @@ namespace wsRest
         {
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}/{fechaPartida}/{fechaRegreso}/{lugarOrigen}/{lugarDestino}",
+                routeTemplate: "api/{controller}/{id}/{qtSeleccionada}/{fechaPartida}/{fechaRegreso}/{lugarOrigen}/{lugarDestino}",
                 defaults: new { id = RouteParameter.Optional,
+                                qtSeleccionada = RouteParameter.Optional,            
                                 fechaPartida = RouteParameter.Optional,
                                 fechaRegreso = RouteParameter.Optional,
                                 lugarOrigen = RouteParameter.Optional,

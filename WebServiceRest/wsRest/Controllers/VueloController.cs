@@ -35,8 +35,17 @@ namespace wsRest.Controllers
         }
 
         // POST api/vuelo
-        public void Post([FromBody]string value)
+        public HttpResponseMessage PostVuelo(int id, int QtSeleccionada)
         {
+            bool result = BLVuelo.ActualizarVuelo(id, QtSeleccionada);
+            if (result == true)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK);
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+            }
         }
 
         // PUT api/vuelo/5

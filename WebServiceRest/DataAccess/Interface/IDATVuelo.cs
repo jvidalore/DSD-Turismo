@@ -5,8 +5,8 @@ using System.Text;
 
 namespace DataAccess.Interface
 {
-    public interface IDATVuelo<T>
+    public interface IDATVuelo
     {
-        bool ActualizarVuelo(T pEntidad);
+        bool ActualizarVuelo(int iNuVuelo, int iQtSeleccionada);
     }
 }
