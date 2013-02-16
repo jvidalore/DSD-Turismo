@@ -3,7 +3,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.pe.company.bean.Hotel;
+import com.pe.company.data.CrearConexion;
 import com.pe.company.service.HotelService;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.jws.WebParam;
 import javax.jws.WebService;
@@ -58,5 +63,36 @@ public class HotelServiceImpl implements HotelService {
 
 	
 	
+        
+        
+        
+        
+        public List<Hotel> ConsultarDisponibilidadBD(
+			@WebParam(name = "cantidadPersona") int cantidadPersona) throws SQLException {
+		// TODO Auto-generated method stub
+		
+		List<Hotel> lista = new ArrayList<Hotel>();
+                
+                CrearConexion objCon = new CrearConexion();
+                
+		Connection cnn = objCon.getConnection();
+                
+                Statement st=cnn.createStatement();
+                ResultSet rs=st.executeQuery("select * from cargosempleados where borrado='false' order by idCargo");
+            
+            
+                while(rs.next()){
+                
+                Hotel registro01 = new Hotel();
+		registro01.setCodigo(rs.getInt("NuHotel"));
+		registro01.setNombre(rs.getString("NuHotel"));
+		
+		lista.add(registro01);
+                
+            }
+            rs.close();
+		return lista;
+	}
+
 
 }
